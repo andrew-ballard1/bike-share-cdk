@@ -16,8 +16,8 @@ Some quick info before diving in
 
  * The table structure could be extended. The initial ask was for a bikes table, I added a sponsor and location table as well. I've never had a project end up with the same first table, even only a few days in.
  * API Gateway could use some more polishing, currently the API Gateway service is what's blocking disallowed calls, there's no internal logic.
- * Second, I'm not a huge fan of the structure of the Lambda backed API Gateway. Given the time I'd rather have put together another layer with a private package of helpers.
- * Also, with time I'd want to put together some CLI tools to ease the deployment. It's not difficult to run `npm run build` and `cdk deploy --all` but the file structure does get messy with the .d.ts and .js additions.
+ * I'm not a huge fan of the structure of the Lambda backed API Gateway. Given the time I'd rather have put together another layer with a private package of helpers.
+ * With time I'd want to put together some CLI tools to ease the deployment. It's not difficult to run `npm run build` and `cdk deploy --all` but the file structure does get messy with the .d.ts and .js additions.
  * I read the take home like 2 days ago. I tried to build for what I remembered, but I definitely added a feature or two and probably missed some as well.
 
 I had also considered just standing up an express server and hammering out an interface to interact with the API, but I have a few projects currently up and running that do a much better job of showing my skills in those areas, so I picked CDK for this.
